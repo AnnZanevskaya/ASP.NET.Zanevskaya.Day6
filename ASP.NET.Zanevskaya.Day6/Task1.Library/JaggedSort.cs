@@ -26,7 +26,7 @@ namespace Task2.Library
         {
             SortArrDel(array, (a, b) => comparer.Compare(a, b));
         }
-        public static void SortArrDel(int[][] jagged, Func<int[],int[],int> comparison)
+        public static void SortArrDel(int[][] jagged, Comparison<int[]> comparison)
         {
             if (jagged == null) throw new ArgumentNullException("jugged");          
             for (int i = 0; i < jagged.Length; i++)
